@@ -1,40 +1,16 @@
 import React from "react";
-import c from './MyPosts.module.css';
+import c from './Post.module.css';
 
-const MyPosts = () => {
+const Post = (props) => {
     return(
-        <div>
+        <div className={c.item}><img align="middle"  src='https://r.mt.ru/r22/photoF0AC/20979963389-0/jpeg/bp.jpeg'/>
+            {/*<span>post1</span>*/}
+            {props.text}
             <div>
-                my posts
-            </div>
-            <div>new post</div>
-            <div>
-                <div className={c.item}>
-                    <img align="middle"  src='https://r.mt.ru/r22/photoF0AC/20979963389-0/jpeg/bp.jpeg'/>
-                    <span>post1</span>
-                </div>
-                <div className={c.item}>
-                    <img align="middle"  src='https://r.mt.ru/r22/photoF0AC/20979963389-0/jpeg/bp.jpeg'/>
-                    <span>post2</span>
-                </div>
-                <div className={c.item}>
-                    <img align="middle"  src='https://r.mt.ru/r22/photoF0AC/20979963389-0/jpeg/bp.jpeg'/>
-                    <span>post3</span>
-                </div>
-                <div className={c.item}>
-                    <img align="middle"  src='https://r.mt.ru/r22/photoF0AC/20979963389-0/jpeg/bp.jpeg'/>
-                    <span>post4</span>
-                </div>
-                <div className={c.item}>
-                    <img align="middle"  src='https://r.mt.ru/r22/photoF0AC/20979963389-0/jpeg/bp.jpeg'/>
-                    <span>post5</span>
-                </div>
-                <div className={c.item}>
-                    <img align="middle"  src='https://r.mt.ru/r22/photoF0AC/20979963389-0/jpeg/bp.jpeg'/>
-                    <span>post6</span>
-                </div>
+                <span>like</span>
+                <span>13</span>
             </div>
         </div>)
 }
 
-export default MyPosts;
+export default Post;
