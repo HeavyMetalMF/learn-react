@@ -1,26 +1,23 @@
 import React from "react";
+import c from './Profile.module.css';
 
 const Profile = () => {
     return(
-    <div className='content'>
+    <div className={c.content}>
         <div>
-            <img className='cont-img' src='http://idemamacom.s3.amazonaws.com/blog/images/52553logoloololo.jpg' />
+            <img className={c.cont_img} src='http://idemamacom.s3.amazonaws.com/blog/images/52553logoloololo.jpg' />
         </div>
         <div>
             ava + description
         </div>
         <div>
-            my posts
             <div>
-                new post
+                my posts
             </div>
+            <div>new post</div>
             <div>
-                <div>
-                    post1
-                </div>
-                <div>
-                    post2
-                </div>
+                <div className={c.item}>post1</div>
+                <div className={c.item}>post2</div>
             </div>
         </div>
     </div>)

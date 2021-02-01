@@ -1,0 +1,11 @@
+.menu {
+    grid-area: m;
+    background-color: aqua;
+}
+.item{
+    color: white;
+    text-decoration: none;
+}
+.item.active{
+    color: yellow;
+}
