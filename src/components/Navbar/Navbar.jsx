@@ -1,22 +1,25 @@
 import React from "react";
 import c from './Navbar.module.css';
+import {NavLink} from "react-router-dom";
 
 const Navbar = () => {
     return (
         <nav className={c.menu}>
-            <div>
-                <a className={`${c.item} ${c.active}`} href='https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md'> Profile</a>
+            <div className={c.item}>
+                <NavLink to="/profile" activeClassName={c.active}> Profile</NavLink>
             </div>
-            <div>
-                <a className={c.item} href='https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md'>Messages</a>
+            <div className={c.item}>
+                <NavLink to="/dialogs" activeClassName={c.active}>Messages</NavLink>
             </div>
-            <div>
-                <a className={c.item} href='https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md'>News</a>
+            <div className={c.item}>
+                <NavLink
+                    to='https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md'>News</NavLink>
             </div>
-            <div>
-                <a className={c.item} href='https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md'>Music</a>
+            <div className={c.item}>
+                <NavLink
+                    to='https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md'>Music</NavLink>
             </div>
-         </nav>)
+        </nav>)
 }
 
 export default Navbar;

@@ -1,0 +1,12 @@
+.content {
+    grid-area: c;
+}
+.cont_img{
+    width: 100%;
+    height: 190px;
+}
+
+.description{
+    padding: 15px;
+    color: goldenrod;
+}

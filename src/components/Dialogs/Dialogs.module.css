@@ -1,0 +1,32 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+}
+
+.dialogs_item {
+    padding: 15px;
+}
+
+.dialogs_item .active{
+    color: grey;
+    font-size: 25px;
+}
+
+.dialog {
+    font-size: 20px;
+    color: goldenrod;
+    text-decoration: none;
+}
+
+.dialog a{
+    text-decoration: none;
+    color: indianred;
+}
+
+.messages_item {
+    padding: 15px;
+}
+
+.message {
+    color: goldenrod;
+}

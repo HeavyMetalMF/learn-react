@@ -1,11 +1,13 @@
 .menu {
     grid-area: m;
-    background-color: aqua;
+    background-color: #808080;
+    padding: 40px;
 }
-.item{
+.item a{
     color: white;
     text-decoration: none;
+    font-size: 28px;
 }
-.item.active{
+.item a.active{
     color: yellow;
 }
