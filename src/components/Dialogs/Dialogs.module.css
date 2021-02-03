@@ -20,7 +20,7 @@
 
 .dialog a{
     text-decoration: none;
-    color: indianred;
+    color: #a74f6e;
 }
 
 .messages_item {
@@ -28,5 +28,5 @@
 }
 
 .message {
-    color: goldenrod;
+    color: #a74f6e;
 }
